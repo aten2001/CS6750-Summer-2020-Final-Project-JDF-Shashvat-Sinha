@@ -16,15 +16,62 @@
 
 \section{Introduction}
 \subsection{Interface Description}
-The interface we have chosen to redesign is the on-screen keyboard for Xbox One consoles. This interface shows up whenever a user has to type in characters from a keyboard into a textbox. It is used for searching, username and password input and the Xbox Live short message service. The keyboard is operated by utilizing the Xbox controller to select letters to be typed, one by one. The keyboard made its appearance with the release of the Xbox One in November 2013.
+The interface we have chosen to redesign is the on-screen keyboard for Xbox One consoles. This interface shows up whenever a user has to type in characters from a keyboard into a textbox. It is used for searching, username and password input and the Xbox Live short message service. The keyboard made its appearance with the release of the Xbox One in November 2013.
 
-In order to use the keyboard, one must have an Xbox One console. Using it, navigate to any screen that requires textual input, for example the search box on the Microsoft Store page, or the password input page on the wireless network configuration screen.
+\begin{figure}[h]
+	\centering
+	\frame{\includegraphics[width=14cm]{jdf-master/Figures/xbox-one-virtual-keyboard.jpg}}
+	\caption{Xbox One Virtual Keyboard}
+	\label{fig:xb1keyboard}
+\end{figure}
 
-A detailed description of the keyboard is given on the portfolio page of the designer, Matthew Hartmen (\cite{hartman_2013}).
+
+A detailed description of the keyboard design is given on the portfolio page of the designer, Matthew Hartman (\cite{hartman_2013}).
 
 
+In order to use the keyboard, one must have an Xbox One console. On the console, navigate to any screen that requires textual input, for example the search box on the Microsoft Store page, or the password input page on the wireless network configuration screen. This should bring up the keyboard on screen.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=10cm]{jdf-master/Figures/xbox-one-controller.png}
+	\caption{Xbox One Controller}
+	\label{fig:xb1controller}
+\end{figure}
+
+The keyboard is operated by the Xbox controller, a handheld device that has a variety of physical inputs on it - two sticks that can be moved in circular directions (thumbsticks), four colored buttons A, B, X \& Y, four directional buttons (cursor keypad), two buttons under the left and right trigger fingers (left and right triggers) and two buttons above the triggers (left and right shoulder buttons). The controller is also equipped with haptic feedback for the triggers and also general vibration. And last but not the least, the thumbsticks are also buttons, operated by pressing them axially.
+
+The keyboard is operated by utilizing the Xbox controller to select letters to be typed, then pressing a button to select that letter. This is done one letter at a time.
+
+\subsection{Scope}
+We will not be redesigning the controller. We will only be redesigning the onscreen virtual keyboard, and the interaction of the controller with the virtual keyboard.
 
 \section{Initial Needfinding}
+\subsection{Choice of Needfinding Type}
+For our initial needfinding, we will use publicly available data in the form of product reviews, opinion pages, design patents (wherein they identify particular problems they are trying to solve), scholarly papers and so on.
+
+Our objective is to determine what are the shortcomings with the existing virtual keyboard interface on-screen of the Xbox One. 
+
+\subsection{Needfinding Approach}
+The volume of literature on the Xbox virtual QWERTY keyboard is not large by any means. So we will divide our needfinding into two parts:
+\begin{itemize}
+    \item Needfinding on QWERTY keyboards in general.
+    \item Needfinding on selecting items with game controllers.
+\end{itemize}
+
+We will use Google Scholar (\url{https://scholar.google.com}) to find articles of interest. We will also use generic searches on Google search to find articles of interest.
+
+In those articles we will search for critiques of QWERTY keyboards, find any quantitative or emperical studies performed and the results thereof.
+
+We will also review papers and articles on methods of input using game controllers that can inform us on better approaches towards using the Xbox One Game controller for input.
+
+\subsection{Needfinding Execution}
+\subsubsection{Findings on QWERTY Keyboards}
+The QWERTY keyboard was designed during the second half of the 19th century by Sholes et. al (\cite{sholes_glidden_soule_1868}) as a means of writing by type. The primiary consideration during its design was the ability of the rudimentary mechanical devices of those days to be able to function properly with the demands of typing in the English language i.e. not get jammed. There is however, a secondary reason for the layout of the keyboard in the QWERTY form, and not ABCDE form, and that was to do with the needs of the original users of the typewriter - telegraph operators (\cite{stamp_2013}), who needed a device that was well suited to transcribing Morse Code into English. It can be seen that Sholes et. al. did actually follow needfinding approaches for their HMI (human-machine-interface) product development and listened to the needs of their users, contrary to popular belief. This section of research was established the original design context of the QWERTY keyboard. That context does not exist now, and needs to be updated.
+
+Multiple forms of research have been performed on QWERTY keyboards with critical analysis done and alternatives proposed.
+\subsubsection{Findings on Game Controller Input}
+
+\subsubsection{Conclusions}
 
 
 \section{Heuristic Evaluation}
