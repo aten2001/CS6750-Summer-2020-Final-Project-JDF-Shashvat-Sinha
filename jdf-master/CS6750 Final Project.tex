@@ -66,9 +66,9 @@ We will also review papers and articles on methods of input using game controlle
 
 \subsection{Needfinding Execution}
 \subsubsection{Findings on QWERTY Keyboards}
-The QWERTY keyboard was designed during the second half of the 19th century by Sholes et. al (\cite{sholes_glidden_soule_1868}) as a means of writing by type. The primiary consideration during its design was the ability of the rudimentary mechanical devices of those days to be able to function properly with the demands of typing in the English language i.e. not get jammed. There is however, a secondary reason for the layout of the keyboard in the QWERTY form, and not ABCDE form, and that was to do with the needs of the original users of the typewriter - telegraph operators (\cite{stamp_2013}), who needed a device that was well suited to transcribing Morse Code into English. It can be seen that Sholes et. al. did actually follow needfinding approaches for their HMI (human-machine-interface) product development and listened to the needs of their users, contrary to popular belief. This section of research was established the original design context of the QWERTY keyboard. That context does not exist now, and needs to be updated.
+The QWERTY keyboard was designed during the second half of the 19th century by Sholes et. al (\cite{sholes_glidden_soule_1868}) as a means of writing by type. Contrary to popular belief, the reason for the QWERTY layout was to meet the needs of the original users of the typewriter - telegraph operators (\cite{stamp_2013}). They needed a device that was well suited to transcribing Morse Code into English. 
 
-Multiple forms of research have been performed on QWERTY keyboards with critical analysis done and alternatives proposed - 
+Multiple forms of research have been performed on QWERTY keyboards with critical analysis done and alternatives proposed. 
 
 In "\textit{The design and evaluation of a high-performance soft keyboard}" (\cite{mackenzie_zhang_1999}) we see that QWERTY as a keyboard layout lags in performance when compared to other virtual keyboard types. Mackenzie and Zhang employ Fitts's Law to quantitatively model an ideal keyboard layout, which they called Opti, that had a 35\% better performance than the standard QWERTY layout - in a virtual keyboard setting.
 
@@ -280,19 +280,47 @@ Among the possible options I would also recommend we add the Dual Stick QWERTY k
 
 
 \section{Evaluation Plan}
-We shall evaluate the new keyboard via an empirical evaluation. Our objective is to determine if the new design does actually help experienced gamers type more efficiently than the standard keyboard.
+We shall perform a quantitative evaluation to determine if the new design does actually help experienced gamers type more efficiently than the standard keyboard. To do this we will utilize the \textit{Xbox Insider Program (XIP)} (\cite{dean_2019}).
+
+We will create a pool of members of the XIP who spend at least one hour a week playing video games that have circular menus, such as Grand Theft Auto V, Red Dead Redemption and Star Wars: Battlefront! The members of this pool will all  undergo a series of typing tests consisting of words, search phrases and complex alphasymbonumeric passwords for the duration of the experiment.
 
 \subsection{Control Group}
-
-\subsection{Experimental Group}
+Our control group will be XIP members who will only have access to the standard QWERTY onscreen keyboard while undertaking the typing tests. They will be randomly selected.
+\subsection{Experimental Group 1}
+Our experimental group 1 will be XIP members who will only have access to the dual circular keyboard while undertaking the typing tests. They will be randomly selected 
+\subsection{Experimental Group 2}
+Our experimental group 2 will be XIP members who will only have access to the concentric dual circular keyboard while undertaking the typing tests. They will be randomly selected.
 
 \subsection{Null Hypothesis}
+\begin{enumerate}
+    \item \textbf{Dual Circular Keyboard vs. QWERTY} : The dual circular keyboard does not show a greater correlation between typing speed and the user's experience with a controller than the standard QWERTY keyboard.
+    \item \textbf{Concentric Dual Circular Keyboard vs. QWERTY} : The concentric dual circular keyboard does not show a greater correlation between typing speed and the user's experience with a controller than the standard QWERTY keyboard.
+    \item \textbf{Concentric Dual Circular Keyboard vs. Dual Circular Keyboard} : The concentric dual circular keyboard does not show a greater correlation between typing speed and  the user's experience with a controller than the (non-concentric) dual circular keyboard.
+\end{enumerate}
 
 \subsection{Alternative Hypothesis}
+\begin{enumerate}
+    \item \textbf{Dual Circular Keyboard vs. QWERTY} : The dual circular keyboard shows greater correlation between typing speed and  the user's experience with a controller than the standard QWERTY keyboard.
+    \item \textbf{Concentric Dual Circular Keyboard vs. QWERTY} : The concentric dual circular keyboard shows greater correlation between typing speed and  the user's experience with a controller than the standard QWERTY keyboard.
+    \item \textbf{Concentric Dual Circular Keyboard vs. Dual Circular Keyboard} : The concentric dual circular keyboard does not show a greater correlation between typing speed and  the user's experience with a controller than the (non-concentric) dual circular keyboard.
+\end{enumerate}
 
 \subsection{Variables}
+The \textbf{independent variable} will be the number of hours that gamers have spent on games that use selection wheels (XIP can track who is playing what game and for what duration). 
+
+The \textbf{dependent variable} is the typing speed that the gamer has on the tests, in terms of characters per second.
 
 \subsection{Statistical Analysis}
+We will perform a linear regression on the data that we get, to get a slope for each of our three groups of users in the form:
+\begin{equation}
+    y = \beta_n x
+\end{equation}
+Here, n = (1, 2, 3) for each of our groups.
+
+We will have disproved our null hypothesii if we can show that the $\beta$ for each of the experiements differs by an amount that is greater than the standard deviation $\sigma$ for each of the datasets.
+
+\subsection{Additional Considerations}
+We assume that as gamers get more familiar with the circular keyboards, their typing speeds will increase. This will give us non-linear response curves. There are two approaches to address this - one is to only consider the linear portions of the curves. The other approach is to normalize the data against the number of minutes the gamers have used the circular keyboards.
 
 \section{References}
 
